@@ -6,7 +6,7 @@ def is_special_number(n):
         temp //= 10
         number_digits += 1
 
-    # Calculate the sum of digits raised to the power of the number of digits
+    # Calculate the sum of digits
     temp = n
     sum_of_digits = 0
     while temp > 0:
@@ -14,7 +14,7 @@ def is_special_number(n):
         sum_of_digits += digit ** number_digits
         temp //= 10
 
-    # Check if the calculated value is equal to the original number
+    # Check if the calculated value to the original number
     return sum_of_digits == n
 
 def display_special_numbers(start, end):
