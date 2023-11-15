@@ -25,8 +25,6 @@ class Student:
         else:
             return 'F'
 
-# Assuming StudentScores.txt is in the same directory and has the following format:
-# firstname,lastname,tnumber,score1,score2,...,scoreN
 with open('10.Project Student Scores.txt', 'r') as file:
     for line in file:
         data = line.strip().split(',')
